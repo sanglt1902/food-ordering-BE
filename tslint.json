@@ -1,0 +1,63 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "interface-name": false,
+    "no-empty-interface": false,
+    "curly": [true, "ignore-same-line"],
+    "quotemark": [true, "single"],
+    "member-access": false,
+    "ordered-imports": false,
+    "arrow-parens": false,
+    "indent": [true, "spaces", 2],
+    "object-literal-sort-keys": false,
+    "no-string-literal": false,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never",
+        "esSpecCompliant": true
+      }
+    ],
+    "variable-name": {
+      "options": [
+        "check-format",
+        "allow-leading-underscore",
+        "allow-pascal-case"
+      ]
+    },
+    "no-var-requires": false,
+    "member-ordering": false,
+    "eofline": true,
+    "no-trailing-whitespace": true,
+    "one-line": false,
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": false
+      }
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-type",
+      "check-type-operator",
+      "check-preblock",
+      "check-operator",
+      "check-rest-spread",
+      "check-typecast"
+    ],
+    "object-curly-spacing": true,
+    "max-line-length": false
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}
