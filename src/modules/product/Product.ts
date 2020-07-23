@@ -8,10 +8,10 @@ import {
     HasMany,
 } from 'sequelize-typescript';
 import { Field, ObjectType } from 'type-graphql';
-import BaseModel from '../BaseModel';
-import { Category } from './Category';
-import { Order } from './Order';
-import { OrderDetail } from './OrderDetail';
+import BaseModel from '../common/BaseModel';
+import { Category } from '../category/Category';
+import { Order } from '../order/Order';
+import { OrderDetail } from '../order-detail/OrderDetail';
 
 @ObjectType()
 @Table

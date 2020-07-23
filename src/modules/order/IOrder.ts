@@ -1,4 +1,4 @@
-import { Order } from '../models';
+import { Order } from '../common/graphql';
 
 export interface IOrder {
     getAll(): Promise<Order[]>;

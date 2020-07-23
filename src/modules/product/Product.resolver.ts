@@ -8,12 +8,12 @@ import {
     Root,
 } from 'type-graphql';
 
-import { ProductInput } from '../models/graphql/ProductInput';
+import { ProductInput } from './graphql/ProductInput';
 import { GraphQLUpload } from 'apollo-server-express';
-import { Upload } from '../services/IUpload';
-import { Product, Category } from '../models';
-import { iProduct } from '../services';
-import { uploadImage } from '../utils/FileUtil';
+import { Upload } from '../common/services/IUpload';
+import { Product, Category } from '../common/graphql';
+import { iProduct } from '../common/services';
+import { uploadImage } from '../../utils/FileUtil';
 
 
 @Resolver(Product)

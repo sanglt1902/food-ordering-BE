@@ -4,8 +4,8 @@ import {
     HasMany,
 } from 'sequelize-typescript';
 import { Field, ObjectType } from 'type-graphql';
-import { Product } from './Product';
-import BaseModel from '../BaseModel';
+import { Product } from '../product/Product';
+import BaseModel from '../common/BaseModel';
 
 @ObjectType()
 @Table

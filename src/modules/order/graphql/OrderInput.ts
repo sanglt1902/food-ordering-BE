@@ -1,6 +1,6 @@
 
 import { ArgsType, Field, Int } from 'type-graphql';
-import { OrderDetailInput } from './OrderDetailInput';
+import { OrderDetailInput } from '../../order-detail/graphql/OrderDetailInput';
 
 @ArgsType()
 export class OrderInput {

@@ -1,4 +1,4 @@
-import { Product } from '../models/entities/Product';
+import { Product } from './Product';
 
 export interface IProduct {
     getAllProducts(): Promise<Product[]>

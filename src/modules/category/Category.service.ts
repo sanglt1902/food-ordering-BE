@@ -1,5 +1,5 @@
 import { ICategory } from './ICategory';
-import { Category } from '../models';
+import { Category } from '../common/graphql';
 
 export class CategoryService implements ICategory {
     getCategoryByName(name: string): Promise<Category> {

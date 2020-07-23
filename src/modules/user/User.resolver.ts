@@ -9,10 +9,10 @@ import {
     Query,
     Resolver,
 } from 'type-graphql';
-import { User } from '../models/entities/User';
-import AuthInputArgs from '../auth/AuthInputArgs';
-import Token from '../auth/Token';
-import { IContext, IUserPayLoad, Role } from '../auth/ContextInterface';
+import { User } from './User';
+import AuthInputArgs from '../../auth/AuthInputArgs';
+import Token from '../../auth/Token';
+import { IContext, IUserPayLoad, Role } from '../../auth/ContextInterface';
 
 const expiresIn = '1y';
 

@@ -6,8 +6,8 @@ import {
 } from 'type-graphql';
 import { GraphQLString } from 'graphql';
 
-import { Category } from '../models';
-import { iCategory } from '../services';
+import { Category } from '../common/graphql';
+import { iCategory } from '../common/services';
 
 
 

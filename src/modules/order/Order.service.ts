@@ -1,8 +1,8 @@
-import { logger } from '../logger';
+import { logger } from '../../logger';
 import { IOrder } from './IOrder';
-import { Order, OrderDetail, Product } from '../models';
-import { OrderInput } from '../models/graphql/OrderInput';
-import { iProduct, iOrderDetail } from '.';
+import { Order, OrderDetail, Product } from '../common/graphql';
+import { OrderInput } from './graphql/OrderInput';
+import { iProduct, iOrderDetail } from '../common/services';
 
 export class OrderService implements IOrder {
     getAll(): Promise<Order[]> {

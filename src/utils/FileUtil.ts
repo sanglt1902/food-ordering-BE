@@ -1,6 +1,6 @@
 import { createWriteStream, existsSync, mkdirSync } from 'fs';
 import path from 'path';
-import { Upload } from '../services/IUpload';
+import { Upload } from '../modules/common/services/IUpload';
 
 export const uploadImage = async (imageUpload: Upload) => {
     const imageInput = await Promise.all([imageUpload]);

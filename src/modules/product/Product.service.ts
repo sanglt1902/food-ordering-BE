@@ -1,7 +1,7 @@
 import { IProduct } from './IProduct'
-import { Product } from '../models/entities/Product';
-import { logger } from '../logger';
-import { iCategory } from '.';
+import { Product } from './Product';
+import { logger } from '../../logger';
+import { iCategory } from '../common/services';
 
 export class ProductService implements IProduct {
 

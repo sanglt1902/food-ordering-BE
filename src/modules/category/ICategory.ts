@@ -1,4 +1,4 @@
-import { Category } from '../models';
+import { Category } from '../common/graphql';
 
 export interface ICategory {
     getAll(): Promise<Category[]>;

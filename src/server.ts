@@ -34,7 +34,7 @@ const main = async () => {
         authChecker: customAuthChecker,
         emitSchemaFile: path.resolve(__dirname, '..', 'schema', 'schema.gql'),
         // .js instead of .ts because ts will transpile into js
-        resolvers: process.env.NODE_ENV === 'production' ? [`${__dirname}/controllers/*.resolver.js`] : [`${__dirname}/controllers/*.resolver.ts`],
+        resolvers: process.env.NODE_ENV === 'production' ? [`${__dirname}/modules/*/*.resolver.js`] : [`${__dirname}/modules/*/*.resolver.ts`],
     });
     const app = express();
     app.use('*', cors());

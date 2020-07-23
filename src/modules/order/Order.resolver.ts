@@ -5,9 +5,9 @@ import {
 } from 'type-graphql';
 import { GraphQLString } from 'graphql';
 
-import { Order } from '../models';
-import { OrderInput } from '../models/graphql/OrderInput';
-import { iOrder } from '../services';
+import { Order } from '../common/graphql';
+import { OrderInput } from './graphql/OrderInput';
+import { iOrder } from '../common/services';
 
 
 @Resolver(Order)

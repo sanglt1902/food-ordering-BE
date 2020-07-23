@@ -2,18 +2,15 @@ import {
     Column,
     Table,
     HasMany,
-    ForeignKey,
-    DataType,
+
     BelongsToMany,
-    BelongsTo,
-    Default,
 } from 'sequelize-typescript';
 import { Field, ObjectType } from 'type-graphql';
-import BaseModel from '../BaseModel';
-import { User } from './User';
-import { OrderStatus } from '../constants';
-import { OrderDetail } from './OrderDetail';
-import { Product } from './Product';
+import BaseModel from '../common/BaseModel';
+import { OrderDetail } from '../order-detail/OrderDetail';
+import { Product } from '../product/Product';
+import { OrderStatus } from '../common/Constants';
+
 
 @ObjectType()
 @Table

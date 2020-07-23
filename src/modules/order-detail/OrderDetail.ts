@@ -6,9 +6,9 @@ import {
     BelongsTo,
 } from 'sequelize-typescript';
 import { Field, ObjectType } from 'type-graphql';
-import BaseModel from '../BaseModel';
-import { Order } from './Order';
-import { Product } from './Product';
+import BaseModel from '../common/BaseModel';
+import { Order } from '../order/Order';
+import { Product } from '../product/Product';
 
 @ObjectType()
 @Table
